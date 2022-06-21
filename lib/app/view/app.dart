@@ -10,10 +10,15 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
+        useMaterial3: false,
         colorScheme: ColorScheme.fromSeed(
+          primary: Colors.blue,
+          onPrimary: Colors.red,
           seedColor: Colors.green,
           brightness: Brightness.dark,
-          surface: const Color(0xff003909),
+          background: Colors.blueGrey,
+          surface: Colors.brown,
+          onSurface: Colors.amber,
         ),
       ),
       localizationsDelegates: const [
